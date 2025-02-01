@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px repeat(3, 300px);
@@ -61,3 +61,7 @@ li a{
     color: black;
 }
 
+footer{
+    background-color: lightseagreen;
+    grid-area: footer;
+}
