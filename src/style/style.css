@@ -1,3 +1,63 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(3, 300px);
+    grid-template-areas: 
+        "header header header header"
+        "navbar main main main"
+        "navbar content-1 content-2 content-3"
+        "navbar footer footer footer"
+    ;
 }
+
+header, nav, section{
+    padding: 20px;
+}
+
+header{
+    background-color: lightblue;
+    grid-area: header;
+}
+
+nav{
+    background-color: lightgreen;
+    grid-area: navbar;
+}
+
+.main{
+    background-color: lightsalmon;
+    grid-area: main;
+}
+
+.content-1{
+    background-color: lightblue;
+    grid-area: content-1;
+}
+
+.content-2{
+    background-color: lightyellow;
+    grid-area: content-2;
+}
+
+.content-3{
+    background-color: lightpink;
+    grid-area: content-3;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+li a{
+    color: black;
+}
+
